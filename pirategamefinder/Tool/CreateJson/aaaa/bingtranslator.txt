@@ -1,0 +1,59 @@
+def BingTranslateContext(key):
+	key
+	url = "https://cn.bing.com/ttranslationlookup?&IG=3EF2174489CC4319A90ECF75C534ABCB&IID=translator.5035.6"
+	TranslateWord = key
+	isEnglish =key.isalpha()
+	is_chinese_b = is_chinese(key[0])
+	if is_chinese_b==False:
+		Myfrom = "en"
+		Myto = "zh-CHS"
+	else:
+		Myfrom = "zh-CHS"
+		Myto = "en"
+	FormateData = {
+	"text":TranslateWord,
+	"from":Myfrom,
+	"to":Myto
+	}
+	my_datas = urllib.parse.urlencode(FormateData).encode(encoding='UTF8')
+	my_headers ={
+		"Accept": "*/*",
+		"Origin": "https://cn.bing.com",
+		"Referer": "https://cn.bing.com/",
+		"Accept-Language": "zh-Hans-CN,zh-Hans;q=0.7,ja;q=0.3",
+		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299",
+		"Content-type": "application/x-www-form-urlencoded",
+		"Host": "cn.bing.com",
+		"Connection": "Keep-Alive",
+		"Cache-Control": "no-cache"
+	}
+	request  = urllib.request.Request (url,data = my_datas,headers = my_headers)
+	text  = urllib.request.urlopen(request).read()
+
+	url = "https://cn.bing.com/ttranslate?&category=&IG=3EF2174489CC4319A90ECF75C534ABCB&IID=translator.5035.8"
+	TranslateWord = key
+	FormateData = {
+	"text":TranslateWord,
+	"from":Myfrom,
+	"to":Myto
+	}
+	my_datas = urllib.parse.urlencode(FormateData).encode(encoding='UTF8')
+	my_headers ={
+		"Accept": "*/*",
+		"Origin": "https://cn.bing.com",
+		"Referer": "https://cn.bing.com/",
+		"Accept-Language": "zh-Hans-CN,zh-Hans;q=0.7,ja;q=0.3",
+		"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299",
+		"Content-type": "application/x-www-form-urlencoded",
+		"Host": "cn.bing.com",
+		"Connection": "Keep-Alive",
+		"Cache-Control": "no-cache"
+	}
+	request  = urllib.request.Request (url,data = my_datas,headers = my_headers)
+	text  = urllib.request.urlopen(request).read()
+
+	#print(text)
+	#print(text.decode("UTF-8"))
+	target = json.loads(text.decode("UTF-8"))
+	results = target['translationResponse']
+	return results

@@ -1,0 +1,13 @@
+.idea
+__pycache__
+/PythonFunctionWeb/geckodriver.log
+geckodriver.log
+venv
+AppMonitor
+/StartSearch/cache/E2W/AppMonitor
+A_20190220_124849
+/*.DS_Store
+spiders - 副本.py
+/StartSearch/function/spiders - 副本 (2).py
+/StartSearch/total_install.py
+/StartSearch/total_requirements.txt

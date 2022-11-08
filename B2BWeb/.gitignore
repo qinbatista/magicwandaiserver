@@ -1,0 +1,4 @@
+.idea
+/Web/__pycache__
+__pycache__
+/WebServer/*.log

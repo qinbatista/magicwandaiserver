@@ -1,0 +1,23 @@
+requests
+selenium
+pillow
+chardet
+xpinyin
+bs4
+xlwings
+xlsxwriter
+xlrd
+xlwt
+#random
+#socket
+#threading
+#collections
+#multiprocessing
+
+#tensorflow包含在docker镜像中。
+#如果您正在寻找手动安装的依赖项，
+#NB：Tensorflow版本1.12是Tensorflow支持的最低版本。
+#如果您的显卡支持低于Cuda 9.0，您将需要
+#自己编译tensorflow或下载自定义版本。
+#为CUDA 9.0安装1.12.0 <= tensorflow-gpu <= 1.13.0
+#对于CUDA 10.0，＃或tensorflow-gpu> = 1.13.1或tf-nightly-gpu

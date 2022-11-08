@@ -1,0 +1,16 @@
+﻿[submodule "talkingdataspider"]
+	path = talkingdataspider
+	url = https://qinbatista:qinyupeng1@bitbucket.org/qinbatista/talkingdataspider.git
+
+[submodule "magicwandaiweb"]
+	path = magicwandaiweb
+	url = https://qinbatista:qinyupeng1@bitbucket.org/qinbatista/magicwandaiweb.git
+[submodule "pirategamefinder"]
+	path = pirategamefinder
+	url = https://qinbatista:qinyupeng1@bitbucket.org/qinbatista/pirategamefinder.git
+[submodule "magicwandaitranslater"]
+	path = magicwandaitranslater
+	url = https://qinbatista:qinyupeng1@bitbucket.org/qinbatista/magicwandaitranslater.git
+[submodule "B2BWeb"]
+	path = B2BWeb
+	url = https://qinbatista:qinyupeng1@bitbucket.org/qinbatista/b2bweb.git
