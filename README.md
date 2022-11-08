@@ -1,0 +1,4 @@
+# MagicWandAIServer
+
+# magicwandaiserver
+# magicwandaiserver
